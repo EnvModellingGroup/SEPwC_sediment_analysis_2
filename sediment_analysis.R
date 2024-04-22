@@ -1,6 +1,6 @@
 #!/usr/bin/env Rscript
 suppressPackageStartupMessages({
-library(G2Sd)
+#library(G2Sd)
 library(ggplot2)
 library(argparse)
 })
@@ -18,10 +18,14 @@ read_sed_data<-function(input_file) {
 
 
 read_core_depths <- function(depth_file) {
+  
+  depth_data <- read.csv(depth_file)
+  # do somne processing and stuff
 
 }
 
 calculate_grain_percentages<-function(grain_sizes, grain_stats, gs_data_matrix) {
+  
 
 }
 
